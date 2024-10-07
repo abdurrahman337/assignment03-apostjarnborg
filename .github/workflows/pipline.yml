@@ -44,6 +44,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: playwright-test-result
-          path: ./playwright-report
+          path: ./playwright-report 
 
   
