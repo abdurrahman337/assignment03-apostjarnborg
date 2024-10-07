@@ -37,6 +37,9 @@ jobs:
 
       # Run tests
       - name: Run tests
+        env:
+          TEST_USERNAME: ${{secrets.TEST_USERNAME}}
+          TEST_PASSWORD: ${{secrets.TEST_PASSWORD}}
         run: npm run run-tests
 
       # Publish result
